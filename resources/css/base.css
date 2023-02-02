@@ -1,0 +1,34 @@
+:root{
+    --color-primary: 0 248 187;
+}
+html {
+    @apply font-body;
+}
+@font-face {
+    font-family: "ALMONI";
+    src: url("../../public/fonts/Almonidl-tzar/almoni-neue-tzar-aaa-regular.woff2");
+    font-display: auto;
+}
+@font-face {
+    font-family: "ALMONI-BOLD";
+    src: url("../../public/fonts/Almonidl-tzar/almoni-neue-tzar-aaa-bold.woff2");
+    font-display: auto;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Assistant";
+    src: url("../../public/fonts/Assistant/Assistant-Regular.woff2");
+    font-display: auto;
+}
+
+@font-face {
+    font-family: "Assistant-SemiBold";
+    src: url("../../public/fonts/Assistant/Assistant-SemiBold.woff2");
+    font-display: auto;
+}
+
+@font-face {
+    font-family: "Assistant-Bold";
+    src: url("../../public/fonts/Assistant/Assistant-Bold.woff2");
+    font-display: auto;
+}

@@ -1,0 +1,9 @@
+.text-right{
+    direction: rtl;
+}
+[x-cloak] {
+    display: none !important;
+}
+.ltr{
+    direction: ltr;
+}
