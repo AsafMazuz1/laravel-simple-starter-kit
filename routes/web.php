@@ -31,11 +31,11 @@ Route::middleware([
 
 
 
-    //Define sorters routes with sorter prefix and middleware
-    Route::prefix('sorter')->middleware('sorter')->group(function () {
+    //Define Admins routes with admin prefix and middleware
+    Route::prefix('admin')->middleware('admin')->group(function () {
         Route::get('/dashboard', function () {
-            return view('sorter.dashboard');
-        })->name('sorter.dashboard');
+            return view('admin.dashboard');
+        })->name('admin.dashboard');
     });
 
 

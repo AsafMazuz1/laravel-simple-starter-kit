@@ -7,7 +7,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Laravel\Jetstream\Role;
 
-class Sorter
+class Admin
 {
     /**
      * Handle an incoming request.
@@ -18,8 +18,7 @@ class Sorter
      */
     public function handle(Request $request, Closure $next)
     {
-        //Check if auth user is sorter (role = 1 or 2)
-        if (auth()->user()->role == UserRole::Sorter || auth()->user()->role == UserRole::Admin) {
+        if (auth()->user()->role == UserRole::Admin) {
             return $next($request);
         }
         return redirect()->route('404');

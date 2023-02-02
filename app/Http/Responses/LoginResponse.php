@@ -15,8 +15,6 @@ class LoginResponse implements LoginResponseContract
         switch (auth()->user()->role) {
             case UserRole::Admin:
                 $home = redirect()->intended('/admin/dashboard');
-            case UserRole::Sorter:
-                $home = redirect()->route('sorter.dashboard');
             default:
                 $home = redirect()->intended('/dashboard');
         }

@@ -24,7 +24,7 @@ class GetFileRequest extends FormRequest
 //            return true;
 //        }
 //
-//        if(\Auth::user()->role == UserRole::Sorter || \Auth::user()->role == UserRole::Admin) {
+//        if(\Auth::user()->role == UserRole::Admin) {
 //            return true;
 //        }
 
